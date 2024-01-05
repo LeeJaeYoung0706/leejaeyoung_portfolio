@@ -1,19 +1,21 @@
 import styled, {css, RuleSet} from "styled-components";
 import {displayEnum} from "@/types/enum";
+import {NoInfer} from "styled-components/dist/types";
+import {Props} from "next/script";
 
 /**
  * 반응형 쿼리
  * @param maxWidth
  */
 export const customMediaQuery = (maxWidth: number): string =>
-    `@media screen and (max-width: ${maxWidth}px)`
+  `@media screen and (max-width: ${maxWidth}px)`
 
-export const commonAnimation = (animationCss: RuleSet<Object>) => css`
-  -webkit-animation: ${animationCss};
-  -moz-animation: ${animationCss};
-  -o-animation: ${animationCss};
-  animation: ${animationCss};
-`
+export const commonAnimation = (animationCss: RuleSet<NoInfer<any>>) => {
+  return css`
+    -webkit-animation: ${animationCss};
+    animation: ${animationCss};
+  `
+}
 
 /**
  * Font Size
@@ -40,13 +42,13 @@ export const SectionTitleLineHeight = css``;
  * @param alignItems
  * @param wrap
  */
-export const DisplayFlexContainer = (flexDirection :flexDirectionType, justifyContent :justifyContentType, alignItems :alignItemsType , display :displayType = displayEnum.f , wrap?: boolean ) =>
+export const DisplayFlexContainer = (flexDirection: flexDirectionType, justifyContent: justifyContentType, alignItems: alignItemsType, display: displayType = displayEnum.f, wrap?: boolean) =>
   styled.div`
-      display: ${display};
-      flex-direction: ${flexDirection};
-      justify-content: ${justifyContent};
-      align-items: ${alignItems};
-      flex-wrap: ${wrap ? 'wrap' : 'nowrap'};
+    display: ${display};
+    flex-direction: ${flexDirection};
+    justify-content: ${justifyContent};
+    align-items: ${alignItems};
+    flex-wrap: ${wrap ? 'wrap' : 'nowrap'};
   `;
 
 /**
@@ -57,14 +59,14 @@ export const DisplayFlexContainer = (flexDirection :flexDirectionType, justifyCo
  * @param display
  * @param wrap
  */
-export const DisplayFlex = (flexDirection :flexDirectionType, justifyContent :justifyContentType, alignItems :alignItemsType , display :displayType = 'flex' , wrap?: boolean ) => css`
-      display: ${display};
-      flex-direction: ${flexDirection};
-      justify-content: ${justifyContent};
-      align-items: ${alignItems};
-      flex-wrap: ${wrap ? 'wrap' : 'nowrap'};
-    `
+export const DisplayFlex = (flexDirection: flexDirectionType, justifyContent: justifyContentType, alignItems: alignItemsType, display: displayType = 'flex', wrap?: boolean) => css`
+  display: ${display};
+  flex-direction: ${flexDirection};
+  justify-content: ${justifyContent};
+  align-items: ${alignItems};
+  flex-wrap: ${wrap ? 'wrap' : 'nowrap'};
+`
 export const color = {
-    black: 'var(--black)',
-    white: 'var(--white)'
+  black: 'var(--black)',
+  white: 'var(--white)'
 }
