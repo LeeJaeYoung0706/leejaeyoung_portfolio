@@ -50,5 +50,6 @@ interface HeaderHamburgerButtonInterface {
 interface HeaderMobileMenuListPropsInterface {
   checked: boolean
   onClick: () => void
+  children?: React.ReactNode
 }
 //endregion
