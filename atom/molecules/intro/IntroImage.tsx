@@ -7,7 +7,6 @@ import {RussoOneFont} from "@/styles/font/fontStyle";
 
 
 const IntroSVG = styled(IntroSvgPC)`
-  font-size: 30px;
 `
 
 const introSvgKeyframes = (theme: DefaultTheme) => keyframes`
@@ -38,6 +37,7 @@ const introSvgKeyframes = (theme: DefaultTheme) => keyframes`
 
 const IntroSvgLayoutStyle = styled(DisplayFlexContainer(flexDirectionEnum.r , justifyContentEnum.c , alignItemsEnum.c))`
   position: relative;
+  font-size: 30px;
   width: 100%;
   height: 105vh;
   ${props => commonAnimation(css`${introSvgKeyframes(props.theme)} 8s infinite alternate`)}
@@ -74,7 +74,7 @@ const IntroSvgLayoutStyle = styled(DisplayFlexContainer(flexDirectionEnum.r , ju
   ${(props) => props.theme.media.mobile} {
     min-height: 370px;
     background-position: 55%, 50%;
-    font-size: 45px;
+    font-size: 37px;
   }
 `;
 
@@ -82,8 +82,9 @@ function IntroImage(): React.JSX.Element {
   return (
     <IntroSvgLayoutStyle className={RussoOneFont.className}>
       <IntroSVG>
-        <text x="35%" y="30%" dy="25px" textAnchor="middle">FRONT</text>
-        <text x="55%" y="52%" dy="30px" textAnchor="middle">DEVELOPER</text>
+        <text x="40%" y="30%" dy="25px" textAnchor="middle">WEB/APP</text>
+        <text x="52%" y="52%" dy="25px" textAnchor="middle">APPLICATION</text>
+        <text x="51%" y="72%" dy="30px" textAnchor="middle">DEVELOPER</text>
       </IntroSVG>
     </IntroSvgLayoutStyle>
   )

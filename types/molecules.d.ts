@@ -24,3 +24,18 @@ interface MenuButtonArrayInterface {
 }
 
 //endregion
+
+
+/**
+ * About Me
+ */
+//region
+interface AboutMeIdCardListViewPropsInterface {
+  children: React.ReactNode[]
+}
+
+interface AboutMeIdCardListPropsInterface {
+  idCardContentList: { title: string, content: string, $imageUrl: string }[]
+}
+
+//endregion

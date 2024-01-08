@@ -31,6 +31,16 @@ interface UlTagPropsInterface extends ComponentChildrenPropsInterface{
   children: React.ReactNode[] | React.ReactNode
   $style?: RuleSet<Object>
 }
+
+interface SectionTitlePropsInterface {
+  title: string
+  id: string
+}
+
+interface SectionTitleViewPropsInterface {
+  title: { first: string, other: string }
+  id: string
+}
 //endregion
 
 /**
@@ -52,4 +62,41 @@ interface HeaderMobileMenuListPropsInterface {
   onClick: () => void
   children?: React.ReactNode
 }
+//endregion
+
+/**
+ * About Me
+ */
+//region
+interface AboutMeIdCardContentPropsInterface {
+  content: string
+}
+
+interface AboutMeIdCardPropsInterface {
+  content: string
+  title: string
+  imageUrl: string
+}
+
+interface AboutMeIdCardViewPropsInterface extends ComponentPropsInterface {
+  children: React.ReactNode
+}
+
+interface AboutMeIdTitleViewPropsInterface {
+  font: string,
+  title: string
+}
+
+interface AboutMeIdTitlePropsInterface {
+  font: string,
+  title: string,
+  imageUrl: string
+}
+
+interface AboutMeIdTitleImagePropsInterface {
+  title: string,
+  imageUrl: string
+}
+
+
 //endregion
