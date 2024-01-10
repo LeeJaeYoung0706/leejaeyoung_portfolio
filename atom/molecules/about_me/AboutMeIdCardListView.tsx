@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import {DisplayFlex, DisplayFlexContainer} from "@/styles/commonStyles";
-import {alignItemsEnum, displayEnum, flexDirectionEnum, justifyContentEnum} from "@/types/enum";
+import {alignItemsEnum, displayEnum, flexDirectionEnum, justifyContentEnum} from "@/@types/enum";
 
 const IdCardListStyles = styled(DisplayFlexContainer(flexDirectionEnum.r , justifyContentEnum.sa , alignItemsEnum.c , displayEnum.f , true))`
   padding-bottom: 50px;

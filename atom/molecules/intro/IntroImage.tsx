@@ -1,7 +1,7 @@
 import React from "react";
 import styled, {css, DefaultTheme, keyframes} from "styled-components";
 import {commonAnimation, DisplayFlexContainer} from "@/styles/commonStyles";
-import {alignItemsEnum, flexDirectionEnum, justifyContentEnum} from "@/types/enum";
+import {alignItemsEnum, flexDirectionEnum, justifyContentEnum} from "@/@types/enum";
 import IntroSvgPC from "@/public/IntroSvgPC.svg";
 import {RussoOneFont} from "@/styles/font/fontStyle";
 

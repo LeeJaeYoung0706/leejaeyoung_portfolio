@@ -6,7 +6,7 @@ import {
   MiddleTitleFontSizePC,
   MiddleTitleFontSizeTablet
 } from "@/styles/commonStyles";
-import {alignItemsEnum, flexDirectionEnum, justifyContentEnum} from "@/types/enum";
+import {alignItemsEnum, flexDirectionEnum, justifyContentEnum} from "@/@types/enum";
 
 
 

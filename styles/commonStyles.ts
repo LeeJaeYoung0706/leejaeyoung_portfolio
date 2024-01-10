@@ -1,5 +1,5 @@
 import styled, {css, RuleSet} from "styled-components";
-import {displayEnum} from "@/types/enum";
+import {displayEnum} from "@/@types/enum";
 import {NoInfer} from "styled-components/dist/types";
 import {Props} from "next/script";
 

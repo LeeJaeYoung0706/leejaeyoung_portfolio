@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import {DisplayFlexContainer} from "@/styles/commonStyles";
-import {alignItemsEnum, flexDirectionEnum, justifyContentEnum} from "@/types/enum";
+import {alignItemsEnum, flexDirectionEnum, justifyContentEnum} from "@/@types/enum";
 
 
 const AboutMeIdCardStyle = styled(DisplayFlexContainer(flexDirectionEnum.r, justifyContentEnum.fs, alignItemsEnum.c))`

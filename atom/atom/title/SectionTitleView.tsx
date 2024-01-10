@@ -1,7 +1,7 @@
 import React from "react";
 import styled, {css} from "styled-components";
 import {DisplayFlexContainer} from "@/styles/commonStyles";
-import {alignItemsEnum, flexDirectionEnum, justifyContentEnum} from "@/types/enum";
+import {alignItemsEnum, flexDirectionEnum, justifyContentEnum} from "@/@types/enum";
 import {RussoOneFont} from "@/styles/font/fontStyle";
 
 

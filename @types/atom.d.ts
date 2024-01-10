@@ -15,6 +15,13 @@ interface HTagComponentPropsInterface extends ContentInterface{
   fontStyle?: string
 }
 
+
+interface PTagPropsInterface {
+  $styles?: RuleSet<Object>
+  content: string
+  font?: string
+}
+
 interface ButtonPropsInterface extends ContentInterface{
   content: React.ReactNode
   $style?: RuleSet<Object>
@@ -25,6 +32,7 @@ interface ButtonPropsInterface extends ContentInterface{
 interface LiTagPropsInterface extends ContentInterface{
   content: React.ReactNode
   $style?: RuleSet<Object>
+  handler?: () => void
 }
 
 interface UlTagPropsInterface extends ComponentChildrenPropsInterface{
@@ -99,4 +107,73 @@ interface AboutMeIdTitleImagePropsInterface {
 }
 
 
+//endregion
+
+/**
+ * Stack
+ */
+
+//region
+interface StackGridLogoTitlePropsInterface {
+  title: string
+}
+
+interface StackLogoViewPropsInterface extends ComponentChildrenPropsInterface {
+  children: React.ReactNode
+}
+
+interface StackLogoImageInterface {
+  src: string,
+  alt: string,
+  size: string
+}
+
+interface StackLogoInterface {
+  src: string,
+  alt: string,
+  text: string
+}
+//endregion
+
+/**
+ * Project
+ */
+
+//region
+interface ProjectTextAnimationPropsInterface {
+  visible: boolean
+  content: string[]
+}
+
+interface ProjectTitleLiViewPropsInterface {
+  title: string
+  checked: boolean
+  liOnClick: () => void
+}
+
+interface ProjectTitleLiPropsInterface {
+  project: ProjectInterface
+  projectCheckHandler: (check: ProjectInterface) => void
+}
+interface ProjectHighLightTitlePropsInterface {
+  project: ProjectListInterface | undefined
+}
+
+interface ProjectSlideTitleDivPropsInterface {
+  title: string,
+  position: boolean
+}
+
+interface ProjectContentPropsInterface {
+  content: (string[] | undefined)[] | (string | undefined)[] | undefined,
+}
+
+interface ProjectContentTextPartPropsInterface {
+  content:  (string[] | undefined)[] | (string | undefined)[] | undefined
+}
+
+interface ProjectLinkTagInterface {
+  link: string
+  $area: RuleSet<Object>
+}
 //endregion
