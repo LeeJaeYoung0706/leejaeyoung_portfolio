@@ -1,5 +1,5 @@
 import React, {useMemo} from "react";
-import {MenuButtonArray} from "@/atom/molecules/header/data/data";
+import {MenuButtonArray} from "@/data/header_data";
 import {useRouter} from "next/navigation";
 import {AppRouterInstance} from "next/dist/shared/lib/app-router-context.shared-runtime";
 import {useThemeContext} from "@/styles/ThemeHandlerContext";

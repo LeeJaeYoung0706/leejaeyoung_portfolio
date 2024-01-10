@@ -1,7 +1,7 @@
 import StackGridView from "@/atom/molecules/stack/StackGridView";
 import React from "react";
 import {GridContentLayoutStyle} from "@/atom/molecules/stack/Styles";
-import {BackStackLogoArray, EtcStackLogoArray, FrontStackLogoArray} from "@/atom/molecules/stack/data";
+import {BackStackLogoArray, EtcStackLogoArray, FrontStackLogoArray} from "@/data/stack_data";
 import StackLogoGridTitle from "@/atom/atom/stack/title/StackLogoGridTitle";
 import StackGridArea from "@/atom/molecules/stack/grid/StackGridArea";
 import {AreaBack, AreaEtc, AreaFront} from "@/atom/molecules/stack/grid/StackGridAreaStyle";

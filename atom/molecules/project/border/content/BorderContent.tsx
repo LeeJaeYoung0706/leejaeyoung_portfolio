@@ -1,11 +1,11 @@
 import BorderContentView from "@/atom/molecules/project/border/content/BorderContentView";
-import {projectGridArray} from "@/atom/molecules/project/border/grid/data";
 import GridAreaLayout from "@/atom/molecules/project/border/grid/GridAreaLayout";
 import GridAreaTitleDiv from "@/atom/atom/project/border/GridAreaTitleDiv";
 import React from "react";
 import ProjectGridContent from "@/atom/atom/project/border/ProjectContent";
 import ProjectLinkTag from "@/atom/atom/project/border/ProjectLinkTag";
 import {LinkGrid} from "@/atom/molecules/project/border/grid/StyleGridArea";
+import {projectGridArray} from "@/data/project_data";
 
 
 export default function ProjectBorderContent({project}: BorderContentPropsInterface): React.JSX.Element | null {
