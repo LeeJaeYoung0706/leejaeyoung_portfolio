@@ -12,3 +12,7 @@ interface HeaderPropsInterface extends ComponentPropsInterface {
   children: React.ReactNode[]
   checked: boolean
 }
+
+interface IntroPropsInterface extends ComponentPropsInterface {
+  children: React.ReactNode
+}

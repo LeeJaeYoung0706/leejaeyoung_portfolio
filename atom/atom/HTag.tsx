@@ -16,34 +16,31 @@ const H2Style = styled.h2<{ $styles?: RuleSet<Object> }>`
   font-size: 30px;
   font-weight: bold;
   ${props => props.$styles};
-  
-  ${(props) => props.theme.media.mobile} {
-    font-size: 18px
-  }
 `;
 const H3Style = styled.h3<{ $styles?: RuleSet<Object> }>`
   font-size: 24px;
   font-weight: bold;
-  ${props => props.$styles};
-  
   ${(props) => props.theme.media.mobile} {
     font-size: 18px
   }
+  ${props => props.$styles};
+  
 `;
 const H4Style = styled.h4<{ $styles?: RuleSet<Object> }>`
   font-size: 20px;
   font-weight: bold;
-  ${props => props.$styles};
-
   ${(props) => props.theme.media.mobile} {
     font-size: 18px
   }
+  ${props => props.$styles};
 `;
+
 const H5Style = styled.h5<{ $styles?: RuleSet<Object> }>`
   font-size: 18px;
   font-weight: bold;
   ${props => props.$styles};
 `;
+
 const H6Style = styled.h6<{ $styles?: RuleSet<Object> }>`
   font-size: 16px;
   font-weight: bold;

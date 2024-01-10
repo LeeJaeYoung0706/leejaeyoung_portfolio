@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import {DisplayFlex} from "@/styles/commonStyles";
-import {alignItemsEnum, flexDirectionEnum, justifyContentEnum} from "@/types/enum";
+import {alignItemsEnum, flexDirectionEnum, justifyContentEnum} from "@/@types/enum";
 
 /**
  * Menu 외 선택 시 Close 를 위한 Div

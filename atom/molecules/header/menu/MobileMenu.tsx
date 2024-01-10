@@ -1,7 +1,7 @@
 import React from 'react';
 import MobileMenuView, {CloseBackGround} from "@/atom/molecules/header/menu/MobileMenuView";
 import HeaderHamburgerButton from "@/atom/atom/header/HeaderHamburgerButton";
-import HeaderMobileMenuList from "@/atom/organisms/header/HeaderMobileMenuList";
+import HeaderMobileMenuList from "@/atom/molecules/header/menu/mobileMenuList/HeaderMobileMenuList";
 
 /**
  * Mobile 메뉴 Container

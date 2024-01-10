@@ -1,8 +1,9 @@
 'use client'
 import React from 'react';
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 import {DisplayFlexContainer} from "@/styles/commonStyles";
-import {alignItemsEnum, flexDirectionEnum, justifyContentEnum} from "@/types/enum";
+import {alignItemsEnum, flexDirectionEnum, justifyContentEnum} from "@/@types/enum";
+import PTag from "@/atom/atom/PTag";
 
 const FooterStyle = styled.footer`
   background-color: ${props => props.theme.palette.reverse};
@@ -13,17 +14,18 @@ const FooterStyle = styled.footer`
 
 const FooterDisplayFlexDivStyle = styled(DisplayFlexContainer(flexDirectionEnum.r, justifyContentEnum.c, alignItemsEnum.c))`
   height: 100%;
-  & > p {
-    color: ${props => props.theme.palette.primary70};
-    opacity: 0.8;
-  }
 `;
 
 function Footer() {
   return (
     <FooterStyle>
       <FooterDisplayFlexDivStyle>
-        <p>©2023 LeeJaeYoung. All Rights Reserved.</p>
+        <PTag
+          content={"©2023 LeeJaeYoung. All Rights Reserved."}
+          $styles={css`
+            color: ${props => props.theme.palette.primary70};
+            opacity: 0.8;
+          `}/>
       </FooterDisplayFlexDivStyle>
     </FooterStyle>
   )
