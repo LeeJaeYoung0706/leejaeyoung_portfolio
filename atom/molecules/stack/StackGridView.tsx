@@ -2,7 +2,6 @@ import React from 'react';
 import styled from "styled-components";
 import {DisplayFlex} from "@/styles/commonStyles";
 import {alignItemsEnum, flexDirectionEnum, justifyContentEnum} from "@/@types/enum";
-import {StackGridViewPropsInterface} from "@/@types/molecules";
 
 
 const StackGridViewStyle = styled.div`

@@ -3,7 +3,6 @@ import styled, {css, keyframes, RuleSet} from "styled-components";
 import {commonAnimation, DisplayFlexContainer} from "@/styles/commonStyles";
 import {alignItemsEnum, flexDirectionEnum, justifyContentEnum} from "@/@types/enum";
 import {AreaBack, areaCommonCSS, AreaEtc} from "@/atom/molecules/stack/grid/StackGridAreaStyle";
-import {StackGridAreaViewPropsInterface} from "@/@types/molecules";
 
 
 

@@ -1,7 +1,7 @@
-import React, {useEffect, useRef} from "react";
+import React, {useRef} from "react";
 import {useIntersectionObserver} from "@/hooks/useIntersectionObserver";
 import StackGridAreaView from "@/atom/molecules/stack/grid/StackGirdAreaView";
-import {GridAreaPropsInterface} from "@/@types/molecules";
+
 
 /**
  * Stack 그리드

@@ -165,11 +165,11 @@ interface ProjectSlideTitleDivPropsInterface {
 }
 
 interface ProjectContentPropsInterface {
-  content: (string[] | undefined)[] | (string | undefined)[] | undefined,
+  content: string[]
 }
 
 interface ProjectContentTextPartPropsInterface {
-  content:  (string[] | undefined)[] | (string | undefined)[] | undefined
+  content:  string[]
 }
 
 interface ProjectLinkTagInterface {

@@ -28,9 +28,12 @@ export default function ProjectBorderContent({project}: BorderContentPropsInterf
                 !value?.$checked &&
                 <>
                   <GridAreaTitleDiv title={value.title || ''} position={true}/>
-                  <ProjectGridContent
-                    content={value?.content}
-                  />
+                  {
+                    value?.content !== undefined &&
+                    <ProjectGridContent
+                      content={value?.content as string[]}
+                    />
+                  }
                 </>
               }
             </GridAreaLayout>
