@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     type: 'website',
     siteName: '이재영 개발자 포트폴리오',
     images: [
-      {url: '/og.svg'}
+      {url: 'https://live.staticflickr.com/8043/8145938470_1cb49e0cbe_z.jpg'}
     ]
-  }
+  },
 }
 
 
