@@ -11,7 +11,7 @@ import {Button} from "@/atom/atom/button/Button";
 import {HeaderButtonStyle} from "@/atom/atom/button/ButtonStyles";
 import {css} from "styled-components";
 import {AppRouterInstance} from "next/dist/shared/lib/app-router-context.shared-runtime";
-import {MenuButtonArray} from "@/atom/molecules/header/data/data";
+import {MenuButtonArray} from "@/data/header_data";
 
 
 /**

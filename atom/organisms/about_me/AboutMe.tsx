@@ -1,7 +1,7 @@
 "use client"
 import React from "react";
 import AboutMeView from "@/atom/organisms/about_me/AboutMeView";
-import {IdCardContentList} from "@/atom/organisms/about_me/AboutMeDescription";
+import {IdCardContentList} from "@/data/aboutme_data";
 import SectionTitle from "@/atom/atom/title/SectionTitle";
 import AboutMeIdCardList from "@/atom/molecules/about_me/AboutMeIdCardList";
 

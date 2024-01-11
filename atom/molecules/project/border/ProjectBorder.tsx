@@ -1,7 +1,7 @@
 'use client'
 import React, {useCallback, useEffect, useRef, useState} from "react";
 import ProjectBorderView from "@/atom/molecules/project/border/ProjectBorderView";
-import {initProjectList} from "@/atom/organisms/project/data";
+import {initProjectList} from "@/data/project_data";
 import InitPageContent from "@/atom/molecules/project/init_page/InitPageContent";
 import {useIntersectionObserver} from "@/hooks/useIntersectionObserver";
 import UlTag from "@/atom/atom/list_tags/UlTag";

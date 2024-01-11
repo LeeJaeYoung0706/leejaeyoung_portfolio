@@ -1,3 +1,11 @@
+import {
+  FunctionsGrid,
+  FunctionsTitleGrid, IntroductionGrid,
+  IntroductionTitleGrid, ResponsibilitiesGrid,
+  ResponsibilitiesTitleGrid, ReviewGrid,
+  ReviewTitleGrid
+} from "@/atom/molecules/project/border/grid/StyleGridArea";
+
 export const initProjectList: ProjectListInterface[] = [
   {
     index: 0,
@@ -129,7 +137,64 @@ export const initProjectList: ProjectListInterface[] = [
       "개인 이력서 정보 제공.",
       "반응형 웹"
     ],
-    link: "https://github.com/LeeJaeYoung0706/portfolio_project",
+    link: "https://github.com/LeeJaeYoung0706/leejaeyoung_portfolio",
     review: "Styled-Components와 css3을 사용하고 라이브러리를 최대한 지양하면서 레이아웃작업부터 끝까지 해보고 싶었습니다. 회사에서는 어느 정도 틀이 나온 상태로 작업을 했었기 때문에 경험해보고 싶었고 기초를 다시 한번 되돌아보고 많은 것들을 알 수 있는 프로젝트였습니다."
   },
+]
+
+
+export const projectGridArray = (project: ProjectListInterface) => [
+  {
+    $area: IntroductionTitleGrid,
+    $checked: true,
+    key: `${project}-grid1`
+  },
+  {
+    $area: ResponsibilitiesTitleGrid,
+    $checked: true,
+    key: `${project}-grid2`
+  },
+  {
+    $area: ReviewTitleGrid,
+    $checked: true,
+    key: `${project}-grid3`
+  },
+  {
+    $area: FunctionsTitleGrid,
+    $checked: true,
+    key: `${project}-grid4`
+  },
+
+  {
+    $area: IntroductionGrid,
+    $checked: false,
+    key: `${project}-${project?.introductionTitle}`,
+    title: '소개',
+    position: false,
+    content: [project?.introductionTitle || '', project?.introduction || '']
+  },
+  {
+    $area: ResponsibilitiesGrid,
+    $checked: false,
+    key: `${project}-${project?.responsibilities}`,
+    title: '담당',
+    position: true,
+    content: [project?.responsibilities] || []
+  },
+  {
+    $area: FunctionsGrid,
+    $checked: false,
+    key: `${project}-${project?.functions}`,
+    title: '기능',
+    position: false,
+    content: [project?.functions] || []
+  },
+  {
+    $area: ReviewGrid,
+    $checked: false,
+    key: `${project}-${project?.review}`,
+    title: '후기',
+    position: true,
+    content: [project?.review] || []
+  }
 ]
