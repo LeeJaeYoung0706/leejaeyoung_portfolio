@@ -20,6 +20,9 @@ export const metadata: Metadata = {
     ],
     url: 'https://leejaeyoung-portfolio-91.vercel.app/'
   },
+  alternates: {
+    canonical: 'https://leejaeyoung-portfolio-91.vercel.app'
+  },
 }
 
 
