@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+Disallow: /private/
+Sitemap: https://leejaeyoung-portfolio-91.vercel.app/sitemap.xml
