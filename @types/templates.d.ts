@@ -16,3 +16,4 @@ interface HeaderPropsInterface extends ComponentPropsInterface {
 interface IntroPropsInterface extends ComponentPropsInterface {
   children: React.ReactNode
 }
+

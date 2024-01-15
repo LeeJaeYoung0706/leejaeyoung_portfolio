@@ -121,3 +121,11 @@ interface EducationAreaContentPropsInterface {
 }
 
 //endregion
+
+/**
+ * Error
+ */
+
+interface ErrorSectionViewPropsInterface extends ComponentChildrenPropsInterface {
+  children: React.ReactNode[]
+}

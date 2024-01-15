@@ -217,3 +217,11 @@ interface EducationImageArrayValueInterface {
 
 //endregion
 
+/**
+ * Error
+ */
+interface ErrorInputFormPropsInterface {
+  pwdHandler: (e: React.ChangeEvent<HTMLInputElement>) => void,
+  pwd: string,
+  errorCheck: boolean
+}
