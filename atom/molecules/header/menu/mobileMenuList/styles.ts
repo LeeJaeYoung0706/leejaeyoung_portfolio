@@ -11,4 +11,5 @@ export const HeaderMobileLiStyle = css`
   padding-bottom: 12px;
   font-size: ${LargeTitleFontSizeMobile};
   color: ${props => props.theme.palette.primary};
+  background-color: ${props => props.theme.palette.reverse70};
 `;

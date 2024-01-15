@@ -96,3 +96,28 @@ interface GridAreaLayoutPropsInterface extends ComponentChildrenPropsInterface {
   $checked: boolean
 }
 //endregion
+
+
+/**
+ * Education
+ */
+
+//region
+interface EducationAreaPropsInterface extends ComponentChildrenPropsInterface {
+  $area: RuleSet<object>
+  children: React.ReactNode
+}
+
+interface EducationGridViewPropsInterface extends ComponentChildrenPropsInterface {
+  children: React.ReactNode
+}
+
+interface EducationAreaContentViewPropsInterface extends ComponentChildrenPropsInterface {
+  children: React.ReactNode[]
+}
+
+interface EducationAreaContentPropsInterface {
+  education: EducationArrayValueInterface
+}
+
+//endregion

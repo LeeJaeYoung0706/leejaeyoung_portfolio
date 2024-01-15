@@ -1,4 +1,5 @@
-export const IdCardContentList = [
+
+export const IdCardContentList:AboutMeIdCardContentArrayValueInterface[] = [
   {
     title: 'Name',
     content: '이재영',

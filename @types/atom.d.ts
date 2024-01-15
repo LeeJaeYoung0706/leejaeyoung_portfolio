@@ -1,11 +1,19 @@
 
-
 /**
  * Common Interface
  */
 //region
 interface ContentInterface {
   content: React.ReactNode | string
+}
+
+interface ImageDivPropsInterface {
+  alt: string
+  src: string
+  size: string
+  $divStyle?: RuleSet<Object>
+  $style?: React.CSSProperties
+  fill: boolean
 }
 
 interface HTagComponentPropsInterface extends ContentInterface{
@@ -106,6 +114,12 @@ interface AboutMeIdTitleImagePropsInterface {
   imageUrl: string
 }
 
+interface AboutMeIdCardContentArrayValueInterface {
+  title: string,
+  content: string,
+  $imageUrl: string
+}
+
 
 //endregion
 
@@ -132,6 +146,12 @@ interface StackLogoInterface {
   src: string,
   alt: string,
   text: string
+}
+
+interface StackLogoArrayValueInterface {
+  text: string,
+  src: string,
+  alt: string
 }
 //endregion
 
@@ -177,3 +197,23 @@ interface ProjectLinkTagInterface {
   $area: RuleSet<Object>
 }
 //endregion
+
+/**
+ * Education
+ */
+
+//region
+interface EducationArrayValueInterface {
+  index: number,
+  $area: RuleSet<Object>,
+  partTitle: string[],
+  content: string[]
+}
+interface EducationImageArrayValueInterface {
+  $area: RuleSet<Object>,
+  src: string,
+  alt: string
+}
+
+//endregion
+

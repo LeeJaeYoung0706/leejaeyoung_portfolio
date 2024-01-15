@@ -22,3 +22,11 @@ interface StackViewPropsInterface extends ComponentChildrenPropsInterface {
 interface ProjectViewPropsInterface extends ComponentChildrenPropsInterface {
   children: React.ReactNode[]
 }
+
+/**
+ * Education
+ */
+
+interface EducationViewPropsInterface extends ComponentPropsInterface {
+  children: React.ReactNode
+}

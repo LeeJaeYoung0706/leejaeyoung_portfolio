@@ -4,7 +4,7 @@
  * Stack Logo 부분 Array 로
  */
 
-export const FrontStackLogoArray = [
+export const FrontStackLogoArray: StackLogoArrayValueInterface[] = [
   {
     text: 'JavaScript',
     src: '/logo/js.png',
@@ -62,7 +62,7 @@ export const FrontStackLogoArray = [
   },
 ]
 
-export const BackStackLogoArray = [
+export const BackStackLogoArray: StackLogoArrayValueInterface[] = [
   {
     text: 'Java',
     src: '/logo/java.png',
@@ -116,7 +116,7 @@ export const BackStackLogoArray = [
 ]
 
 
-export const EtcStackLogoArray = [
+export const EtcStackLogoArray: StackLogoArrayValueInterface[] = [
   {
     text: 'AWS EC2, S3',
     src: '/logo/aws.png',
