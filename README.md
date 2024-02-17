@@ -1,18 +1,8 @@
 
-## Dependency
 
-- Styled Components
-```
-npm install styled-components
-```
+## 리팩토링 후 느낀점
 
-- Prettier
-```
-npm install --save-dev --save-exact prettier
-npm install --save-dev eslint-config-prettier
-```
+CSS 를 매개변수로 해서 넣게 되면 style을 선언할 부분을 새로운 파일로 생성해야하는 번거로움이 있어서 어떤 형식으로 컴포넌트화를 할지에 대해 고민이 되는 부분입니다.
+어차피 스타일을 새로 선언하고 넣는다면 다른 컴포넌트를 생성해서 보기 좋고 명확하게 어떤 역할을 하는지 보여주는 것이 올바른 방법이 될 수도 있다고 생각하기 때문입니다.
 
-- Framer-motion
-```
-npm install framer-motion
-```
+그리고 리팩토링 전에는 확실히 보기 힘든 것 같았고 이름으로 명확하게 명시하려고 해도 Style의 이름 정의에 대해서 고민할 필요가 있다고 생각합니다. 
