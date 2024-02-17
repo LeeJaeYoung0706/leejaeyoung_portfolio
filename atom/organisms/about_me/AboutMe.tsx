@@ -1,4 +1,3 @@
-"use client"
 import React from "react";
 import AboutMeView from "@/atom/organisms/about_me/AboutMeView";
 import {IdCardContentList} from "@/data/aboutme_data";
