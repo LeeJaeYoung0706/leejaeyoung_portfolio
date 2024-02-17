@@ -71,7 +71,6 @@ const CheckIcon = styled(Image)`
  * @constructor
  */
 function ProjectContentTextPartView({content}: ProjectContentTextPartPropsInterface): React.JSX.Element | null {
-
   return (
     <ProjectTextPartViewStyle>
       {

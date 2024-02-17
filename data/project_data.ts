@@ -179,7 +179,7 @@ export const projectGridArray = (project: ProjectListInterface) => [
     key: `${project}-${project?.responsibilities}`,
     title: '담당',
     position: true,
-    content: [project?.responsibilities] || []
+    content: project?.responsibilities || []
   },
   {
     $area: FunctionsGrid,
@@ -187,7 +187,7 @@ export const projectGridArray = (project: ProjectListInterface) => [
     key: `${project}-${project?.functions}`,
     title: '기능',
     position: false,
-    content: [project?.functions] || []
+    content: project?.functions || []
   },
   {
     $area: ReviewGrid,
