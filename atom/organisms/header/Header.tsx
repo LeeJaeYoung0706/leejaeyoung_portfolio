@@ -35,3 +35,10 @@ export default function Header(): React.JSX.Element {
   )
 }
 
+function test<T>(test: T) : T {
+  return test;
+}
+
+test<boolean>(false);
+
+
