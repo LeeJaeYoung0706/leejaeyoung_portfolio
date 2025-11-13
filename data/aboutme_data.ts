@@ -7,7 +7,7 @@ export const IdCardContentList:AboutMeIdCardContentArrayValueInterface[] = [
   },
   {
     title: 'Email',
-    content: 'qaz774422@naver.com',
+    content: 'wodud4019@gmail.com',
     $imageUrl: '/envelope.svg',
   },
   {
@@ -22,7 +22,7 @@ export const IdCardContentList:AboutMeIdCardContentArrayValueInterface[] = [
   },
   {
     title: 'Notion',
-    content: `<a href="https://www.notion.so/leejaeyoung/LeeJaeYoung-Dev-Note-e75eb214139e4d098ba484f11d7f72b0">READ MORE&nbsp; &gt;</a>`,
+    content: `<a href="https://cheddar-harrier-847.notion.site/250c5b1ce1d98009a28bfa795a4594d3?source=copy_link">READ MORE&nbsp; &gt;</a>`,
     $imageUrl: '/notion.png',
   },
   {
