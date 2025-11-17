@@ -20,7 +20,7 @@ const AboutMeIdCardStyle = styled(DisplayFlexContainer(flexDirectionEnum.r, just
   }
 
   ${(props) => props.theme.media.mobile} {
-    min-width: 300px;
+    min-width: 270px;
     gap: 20px;
   }
 `

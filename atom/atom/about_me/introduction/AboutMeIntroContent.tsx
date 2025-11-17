@@ -64,7 +64,7 @@ const IntroDefaultPStyle = styled.p`
  * 강조글 스타일
  */
 const StrongPStyle = styled.span`
-  display: inline;
+  display: block;
   ${MiddleTitleFontSizePC};
   height: auto;
   line-height: 1.5;
@@ -101,11 +101,10 @@ export default function AboutMeIntroContent():React.JSX.Element {
     return (
         <IntroContentStyle $contentVisible={visible} ref={ref}>
             <IntroDefaultPStyle className={NanumGodicFont.className}>
-              <StrongPStyle>개발자로서 사용자에게 편안한 경험을 제공</StrongPStyle>하는 것도 중요하지만,
+                <StrongPStyle>개발자로서 사용자에게 편안한 경험을 </StrongPStyle> 제공 하는 것도 중요하지만,
             </IntroDefaultPStyle>
             <IntroDefaultPStyle className={NanumGodicFont.className}>
-                <StrongPStyle>협업하는 개발자에게도 편안한 경험을 제공</StrongPStyle>
-                하고 싶습니다.
+                <StrongPStyle>협업하는 개발자에게도 편안한 경험을 </StrongPStyle> 제공 하고 싶습니다.
             </IntroDefaultPStyle>
         </IntroContentStyle>
     )
