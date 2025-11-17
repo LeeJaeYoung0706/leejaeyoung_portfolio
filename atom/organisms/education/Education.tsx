@@ -11,7 +11,7 @@ import EducationGrid from "@/atom/molecules/education/grid/EducationGrid";
 export default function Education(): React.JSX.Element {
   return (
     <EducationView>
-      <SectionTitle title={'Education'} id={'education'}/>
+      <SectionTitle title={'Learning'} id={'education'}/>
       <EducationGrid />
     </EducationView>
   )
