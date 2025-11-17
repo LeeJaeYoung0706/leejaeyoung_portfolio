@@ -21,7 +21,7 @@ function Footer() {
     <FooterStyle>
       <FooterDisplayFlexDivStyle>
         <PTag
-          content={"©2023 LeeJaeYoung. All Rights Reserved."}
+          content={"©2024 LeeJaeYoung. All Rights Reserved."}
           $styles={css`
             color: ${props => props.theme.palette.primary70};
             opacity: 0.8;

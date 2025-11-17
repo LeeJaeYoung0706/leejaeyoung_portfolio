@@ -30,12 +30,12 @@ export const educationImageArray: EducationImageArrayValueInterface[] = [
 
 ]
 export const educationArray: EducationArrayValueInterface[] = [
-  {
-    index: 0,
-    $area: UniversityGrid,
-    partTitle: ['성결대학교', '산업경영공학과'],
-    content: ['주 / 야간 : 주간', '학점 : 3.47 / 4.5'],
-  },
+  // {
+  //   index: 0,
+  //   $area: UniversityGrid,
+  //   partTitle: ['성결대학교', '산업경영공학과'],
+  //   content: ['주 / 야간 : 주간', '학점 : 3.47 / 4.5'],
+  // },
   {
     index: 1,
     $area: AcademyGrid,
