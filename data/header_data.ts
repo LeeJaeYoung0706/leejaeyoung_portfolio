@@ -1,4 +1,5 @@
 import {AppRouterInstance} from "next/dist/shared/lib/app-router-context.shared-runtime";
+import Experience from "@/atom/organisms/experience/Experience";
 
 
 export const MenuButtonArray = (router : AppRouterInstance, themeHandler: () => void) : MenuButtonArrayInterface[] => {
@@ -10,6 +11,10 @@ export const MenuButtonArray = (router : AppRouterInstance, themeHandler: () => 
     {
       content: 'ABOUT',
       onClick: () => router.push('#about'),
+    },
+    {
+      content: 'EXPERIENCE',
+      onClick: () => router.push('#experience'),
     },
     {
       content: 'STACK',

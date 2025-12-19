@@ -10,13 +10,14 @@ import ProjectContentTextPart from "@/atom/atom/project/border/ProjectContentTex
  * @param content => 파트 내 콘텐츠
  * @constructor
  */
-export default function ProjectGridContent({content}: ProjectContentPropsInterface
+export default function ProjectGridContent({content, keyValue}: ProjectContentPropsInterface
 ): React.JSX.Element {
-  return (
-    <ProjectGridContentView>
-      <ProjectContentTextPart
-        content={content}
-      />
-    </ProjectGridContentView>
-  )
+    return (
+        <ProjectGridContentView>
+            <ProjectContentTextPart
+                keyValue={keyValue}
+                content={content}
+            />
+        </ProjectGridContentView>
+    )
 }

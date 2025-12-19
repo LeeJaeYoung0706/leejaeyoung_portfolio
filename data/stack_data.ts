@@ -41,7 +41,7 @@ export const FrontStackLogoArray: StackLogoArrayValueInterface[] = [
     alt: 'jquery'
   },
   {
-    text: 'Styled-Component',
+    text: 'Styled-Components',
     src: '/logo/styled.png',
     alt: 'StyledComponent'
   },
@@ -104,6 +104,11 @@ export const BackStackLogoArray: StackLogoArrayValueInterface[] = [
     alt: 'mariadb'
   },
   {
+    text: 'MS-SQL',
+    src: '/logo/mssql.png',
+    alt: 'MS-SQL'
+  },
+  {
     text: 'Oracle',
     src: '/logo/oracle.png',
     alt: 'oracle'
@@ -156,5 +161,15 @@ export const EtcStackLogoArray: StackLogoArrayValueInterface[] = [
     text: 'KeyCloak',
     src: '/logo/keycloak.png',
     alt: 'keycloak'
+  },
+  {
+    text: 'Jenkins',
+    src: '/logo/jenkins.png',
+    alt: 'jenkins'
+  },
+  {
+    text: 'Docker',
+    src: '/logo/docker.png',
+    alt: 'docker'
   },
 ]

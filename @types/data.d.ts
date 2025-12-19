@@ -10,5 +10,7 @@ interface ProjectListInterface {
   responsibilities?: string[],
   functions?: string[],
   link?: string,
-  review?: string
+  review?: string,
+  keyValue?: string,
+  company:string
 }

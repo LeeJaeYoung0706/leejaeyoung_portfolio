@@ -168,6 +168,7 @@ interface ProjectTextAnimationPropsInterface {
 interface ProjectTitleLiViewPropsInterface {
   title: string
   checked: boolean
+  period: string
   liOnClick: () => void
 }
 
@@ -185,11 +186,13 @@ interface ProjectSlideTitleDivPropsInterface {
 }
 
 interface ProjectContentPropsInterface {
-  content: string[]
+  content: string[],
+  keyValue: string
 }
 
 interface ProjectContentTextPartPropsInterface {
-  content:  string[]
+  content: string[],
+  keyValue: string
 }
 
 interface ProjectLinkTagInterface {

@@ -22,7 +22,7 @@ export const IdCardContentList:AboutMeIdCardContentArrayValueInterface[] = [
   },
   {
     title: 'Notion',
-    content: `<a href="https://cheddar-harrier-847.notion.site/250c5b1ce1d98009a28bfa795a4594d3?source=copy_link">READ MORE&nbsp; &gt;</a>`,
+    content: `<a href="https://cheddar-harrier-847.notion.site/STUDY-ARCHIVE-279c5b1ce1d980949923e6d30ca1bf4a?source=copy_link">READ MORE&nbsp; &gt;</a>`,
     $imageUrl: '/notion.png',
   },
   {

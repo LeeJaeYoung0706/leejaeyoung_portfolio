@@ -10,19 +10,21 @@ export const projectUlStyle = css`
   margin-bottom: 40px;
 
   z-index: 350;
-  ${DisplayFlex(flexDirectionEnum.r, justifyContentEnum.c, alignItemsEnum.c)};
-
+  ${DisplayFlex(flexDirectionEnum.r, justifyContentEnum.sb, alignItemsEnum.fs , displayEnum.f , true)};
+  gap: 15px;
   & li:last-child {
     border-right: none;
   }
 
   ${(props) => props.theme.media.tablet} {
     min-height: 230px;
-    ${DisplayFlex(flexDirectionEnum.r, justifyContentEnum.sb, alignItemsEnum.c , displayEnum.f , true)};
+    gap: 10px;
+    ${DisplayFlex(flexDirectionEnum.r, justifyContentEnum.sb, alignItemsEnum.fs , displayEnum.f , true)};
   }
 
   ${(props) => props.theme.media.mobile} {
     min-height: 230px;
-    ${DisplayFlex(flexDirectionEnum.r, justifyContentEnum.sa, alignItemsEnum.c , displayEnum.f , true)};
+    gap: 5px;
+    ${DisplayFlex(flexDirectionEnum.r, justifyContentEnum.sa, alignItemsEnum.fs , displayEnum.f , true)};
   }
 `

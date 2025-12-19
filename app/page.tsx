@@ -6,18 +6,20 @@ import AboutMe from "@/atom/organisms/about_me/AboutMe";
 import Stack from "@/atom/organisms/stack/Stack";
 import Project from "@/atom/organisms/project/Project";
 import Education from "@/atom/organisms/education/Education";
+import Experience from "@/atom/organisms/experience/Experience";
 
 
 export default function Home() {
-  return (
-    <Container>
-      <Main>
-        <Intro />
-        <AboutMe />
-        <Stack />
-        <Project />
-        <Education />
-      </Main>
-    </Container>
-  )
+    return (
+        <Container>
+            <Main>
+                <Intro/>
+                <AboutMe/>
+                <Experience />
+                <Stack/>
+                <Project/>
+                <Education/>
+            </Main>
+        </Container>
+    )
 }

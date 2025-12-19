@@ -29,6 +29,14 @@ export const ReviewTitleGrid = css`
   grid-area: reviewTitle;
 `
 
+export const StackGrid = css`
+  grid-area: stack;
+`
+export const StackTitleGrid = css`
+  grid-area: stackTitle;
+`
+
+
 export const LinkGrid = css`
   grid-area: link;
 `

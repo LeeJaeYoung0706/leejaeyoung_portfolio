@@ -29,32 +29,33 @@ const TitlePStyle = css`
   position: relative;
   ${MiddleTitleFontSizePC};
   padding-bottom: 10px;
-
+  min-width: 100%;
+  
   &:after {
     content: '';
     position: absolute;
     top: 100%;
     left: 0;
-    width: 600%;
+    width:100%;
     height: 3px;
     background-color: ${props => props.theme.palette.primary};
   }
 
-  ${(props) => props.theme.media.tablet} {
-    ${MiddleTitleFontSizeTablet};
-
-    &:after {
-      width: 700%;
-    }
-  }
-
-  ${(props) => props.theme.media.mobile} {
-    ${MiddleTitleFontSizeMobile};
-
-    &:after {
-      width: 500%;
-    }
-  }
+  // ${(props) => props.theme.media.tablet} {
+  //   ${MiddleTitleFontSizeTablet};
+  //
+  //   &:after {
+  //     width: 100%;
+  //   }
+  // }
+  //
+  // ${(props) => props.theme.media.mobile} {
+  //   ${MiddleTitleFontSizeMobile};
+  //
+  //   &:after {
+  //     width: 100%;
+  //   }
+  // }
 `
 
 

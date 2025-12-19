@@ -104,7 +104,7 @@ export default function AboutMeIntroContent():React.JSX.Element {
                 <StrongPStyle>개발자로서 사용자에게 편안한 경험을 </StrongPStyle> 제공 하는 것도 중요하지만,
             </IntroDefaultPStyle>
             <IntroDefaultPStyle className={NanumGodicFont.className}>
-                <StrongPStyle>협업하는 개발자에게도 편안한 경험을 </StrongPStyle> 제공 하고 싶습니다.
+                <StrongPStyle>협업하는 협업자에게도 편안한 경험을 </StrongPStyle> 제공 하고 싶습니다.
             </IntroDefaultPStyle>
         </IntroContentStyle>
     )

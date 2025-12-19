@@ -12,6 +12,7 @@ export default function ProjectTitleLi({project, projectCheckHandler}: ProjectTi
   return (
     <ProjectTitleLiView
       title={project.title}
+      period={project.period}
       checked={project.checked}
       liOnClick={() => projectCheckHandler({...project, checked: !project.checked})}
     />

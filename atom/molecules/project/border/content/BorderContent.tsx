@@ -31,7 +31,8 @@ export default function ProjectBorderContent({project}: BorderContentPropsInterf
                   {
                     value?.content !== undefined &&
                     <ProjectGridContent
-                      content={value?.content as string[]}
+                        keyValue={value?.keyValue as string}
+                        content={value?.content as string[]}
                     />
                   }
                 </>

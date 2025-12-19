@@ -19,6 +19,7 @@ const OpacityAnimation = keyframes`
 const ProjectBorderViewStyle = styled.div<{ $visible: boolean }>`
   width: 100%;
   margin: 0 auto;
+  padding: 0 70px;
   max-width: 1500px;
 
   ${props => props.$visible && css`animation: ${OpacityAnimation} 1s linear normal`};
@@ -27,11 +28,13 @@ const ProjectBorderViewStyle = styled.div<{ $visible: boolean }>`
     ${DisplayFlex(flexDirectionEnum.c, justifyContentEnum.c, alignItemsEnum.c)}
     min-width: 600px;
     max-width: 700px;
+    padding: 0;
   }
 
   ${(props) => props.theme.media.mobile} {
     min-width: 350px;
     max-width: 360px;
+    padding: 0;
   }
 `
 
