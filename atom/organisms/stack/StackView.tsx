@@ -26,7 +26,7 @@ const StackViewStyle = styled.section`
         content: '';
         display: block;
         width: 100%;
-        height: 105%;
+        height: 101%;
         min-height: 100vh;
         background: linear-gradient(
                 to bottom,

@@ -5,7 +5,7 @@ import {RussoOneFont} from "@/styles/font/fontStyle";
 const ExperienceGridTitleStyle = styled.p`
   z-index: 100;
   ${LargeTitleFontSizePC};
-  color: ${props => props.theme.palette.middle};
+  color: ${props => props.theme.palette.middle70};
   width: 100%;
   text-align: center;
   font-weight: bold;

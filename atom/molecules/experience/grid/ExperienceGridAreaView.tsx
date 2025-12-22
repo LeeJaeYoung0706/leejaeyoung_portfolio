@@ -39,34 +39,34 @@ const mobileLeftGridAnimation = keyframes`
 `
 
 const ExperienceAreaStyle = styled(DisplayFlexContainer(flexDirectionEnum.c , justifyContentEnum.fs , alignItemsEnum.fs))<{ $stackVisible: boolean, $area: RuleSet<Object> }>`
-  gap: 40px;
-  z-index: 200;
-  ${props => props.$area};
-  ${areaCommonCSS};
-  ${(props) => !props.$stackVisible ? css`opacity: 0.3;` : css`opacity: 1;`};
-  ${(props) => props.$stackVisible && commonAnimation(css`${pcGridAnimation} ${props.$area === AreaLnKorea ? 1.4 : props.$area === AreaERSolution ? 1.8 : 1}s normal linear;`)};
-  background-color: ${props => props.theme.palette.reverse70};
-  opacity: 0.9;
-
-  @media (hover: hover) and (pointer: fine) {
-    &:hover {
-      opacity: 1;
+    gap: 40px;
+    z-index: 200;
+    ${props => props.$area};
+    ${areaCommonCSS};
+    ${(props) => !props.$stackVisible ? css`opacity: 0.3;` : css`opacity: 1;`};
+    ${(props) => props.$stackVisible && commonAnimation(css`${pcGridAnimation} ${props.$area === AreaLnKorea ? 1.4 : props.$area === AreaERSolution ? 1.8 : 1}s normal linear;`)};
+    background-color: ${props => props.theme.palette.reverse70};
+    opacity: 0.9;
+    min-height: 700px;
+    @media (hover: hover) and (pointer: fine) {
+        &:hover {
+            opacity: 1;
+        }
     }
-  }
 
-  ${(props) => props.theme.media.tablet} {
-    min-width: 600px;
-    ${(props) => props.$stackVisible && commonAnimation(css`${props.$area === AreaERSolution ? mobileRightGridAnimation : mobileLeftGridAnimation} 1s normal linear;`)};
-    width: 100%;
-    opacity: 1;
-  }
+    ${(props) => props.theme.media.tablet} {
+        min-width: 600px;
+        ${(props) => props.$stackVisible && commonAnimation(css`${props.$area === AreaERSolution ? mobileRightGridAnimation : mobileLeftGridAnimation} 1s normal linear;`)};
+        width: 100%;
+        opacity: 1;
+    }
 
-  ${(props) => props.theme.media.mobile} {
-    min-width: 360px;
-    ${(props) => props.$stackVisible && commonAnimation(css`${props.$area === AreaERSolution ? mobileRightGridAnimation : mobileLeftGridAnimation} 1s normal linear;`)};
-    width: 100%;
-    opacity: 1;
-  }
+    ${(props) => props.theme.media.mobile} {
+        min-width: 360px;
+        ${(props) => props.$stackVisible && commonAnimation(css`${props.$area === AreaERSolution ? mobileRightGridAnimation : mobileLeftGridAnimation} 1s normal linear;`)};
+        width: 100%;
+        opacity: 1;
+    }
 `
 
 const ExperienceGridAreaView = React.forwardRef(({children , $stackVisible , $area} : StackGridAreaViewPropsInterface, ref: React.ForwardedRef<HTMLDivElement>) => {
