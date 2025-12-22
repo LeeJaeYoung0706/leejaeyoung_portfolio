@@ -7,6 +7,7 @@ import Stack from "@/atom/organisms/stack/Stack";
 import Project from "@/atom/organisms/project/Project";
 import Education from "@/atom/organisms/education/Education";
 import Experience from "@/atom/organisms/experience/Experience";
+import AboutMeSecond from "@/atom/organisms/about_me_second/AboutMeSecond";
 
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
         <Container>
             <Main>
                 <Intro/>
+                <AboutMeSecond />
                 <AboutMe/>
                 <Experience />
                 <Stack/>

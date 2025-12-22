@@ -33,6 +33,10 @@ interface AboutMeIdCardListViewPropsInterface {
   children: React.ReactNode[]
 }
 
+interface AboutMeSecondContentViewPropsInterface {
+  children: React.ReactNode
+}
+
 interface AboutMeIdCardListPropsInterface {
   idCardContentList: { title: string, content: string, $imageUrl: string }[]
 }
