@@ -12,7 +12,7 @@ const StackViewStyle = styled.section`
     position: absolute;
     content: '';
     left: 0;
-    width: 70%;
+    width: 100%;
     height: 100%;
     background-size: cover;
     background-image: url("/stack_background.png");
@@ -22,7 +22,23 @@ const StackViewStyle = styled.section`
     filter: grayscale(90%);
   }
 
-  ${(props) => props.theme.media.tablet} {
+    &:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 105%;
+        min-height: 100vh;
+        background: linear-gradient(
+                to bottom,
+                ${props => props.theme.palette.reverse},
+                rgba(3, 3, 3, 0.19) 97%
+        );
+        bottom: -10px;
+        position: absolute;
+    }
+
+
+    ${(props) => props.theme.media.tablet} {
     &:before {
       width: 100%;
     }

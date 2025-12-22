@@ -45,7 +45,7 @@ const ExperienceAreaStyle = styled(DisplayFlexContainer(flexDirectionEnum.c , ju
   ${areaCommonCSS};
   ${(props) => !props.$stackVisible ? css`opacity: 0.3;` : css`opacity: 1;`};
   ${(props) => props.$stackVisible && commonAnimation(css`${pcGridAnimation} ${props.$area === AreaLnKorea ? 1.4 : props.$area === AreaERSolution ? 1.8 : 1}s normal linear;`)};
-  background-color: ${props => props.theme.palette.reverse};
+  background-color: ${props => props.theme.palette.reverse70};
   opacity: 0.9;
 
   @media (hover: hover) and (pointer: fine) {

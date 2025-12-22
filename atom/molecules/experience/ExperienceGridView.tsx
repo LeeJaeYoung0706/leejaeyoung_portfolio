@@ -6,7 +6,7 @@ import {alignItemsEnum, flexDirectionEnum, justifyContentEnum} from "@/@types/en
 
 const ExperienceGridViewStyle = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr); // 3열
+  grid-template-columns: repeat(2, 1fr); // 3열
   margin: 0 auto;
   max-width: 1500px;
   overflow-x: hidden;
