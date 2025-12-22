@@ -1,7 +1,8 @@
-'use client'
 import styled from "styled-components";
 import {RussoOneFont} from "@/styles/font/fontStyle";
 import React from "react";
+import ImageDiv from "@/atom/atom/ImageDiv";
+import {AboutMeImageDivStyle} from "@/atom/atom/about_me_second/cards/FirstCardView";
 
 
 const AboutMeSecondContentViewStyleDiv = styled.article`
@@ -50,13 +51,32 @@ const AboutMeSecondBackgroundStyle = styled.div`
     background-image: linear-gradient(43deg, ${props => props.theme.palette.middle} 0%, ${props => props.theme.palette.middle70} 46%, ${props => props.theme.palette.second70} 100%);
 `
 
-export default function AboutMeSecondContentView({children}: AboutMeSecondContentViewPropsInterface) {
+interface CardComponentChildrenPropsFunctionInterface {
+    children: ReactNodeType;
+    showGuide: boolean;
+    handleShowGuide: (pre: boolean) => void;
+}
+
+
+export default function AboutMeSecondContentView({children , showGuide , handleShowGuide}: CardComponentChildrenPropsFunctionInterface) {
+
+
+
     return (
-        <AboutMeSecondContentViewStyleDiv>
+        <AboutMeSecondContentViewStyleDiv onMouseEnter={() => handleShowGuide(false)}>
             <AboutMeSecondContentViewStyle>
                 <AboutMeSecondBackgroundStyle/>
                 <AboutMeSecondLogoStyle className={RussoOneFont.className}>
                     ABOUT ME
+
+                    {showGuide &&    <ImageDiv
+                        src={"/hover.png"} alt={"hover"}
+                        size={'100px'}
+                        $divStyle={
+                            AboutMeImageDivStyle
+                        }
+                        fill={true}
+                    />}
                 </AboutMeSecondLogoStyle>
                 {children}
             </AboutMeSecondContentViewStyle>
