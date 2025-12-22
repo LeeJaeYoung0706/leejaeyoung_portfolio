@@ -16,7 +16,7 @@ export default function Home() {
             <Main>
                 <Intro/>
                 <AboutMeSecond />
-                <AboutMe/>
+                {/*<AboutMe/>*/}
                 <Experience />
                 <Stack/>
                 <Project/>

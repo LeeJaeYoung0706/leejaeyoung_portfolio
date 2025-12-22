@@ -12,7 +12,7 @@ export default function AboutMeSecond() {
 
     return (
         <AboutMeSecondView>
-            <SectionTitle title={'ABOUTSECOND'} id={'aboutSecond'}/>
+            <SectionTitle title={'About Me'} id={'aboutMe'}/>
             <AboutMeSecondContent />
         </AboutMeSecondView>
     )

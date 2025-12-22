@@ -1,14 +1,16 @@
 'use client'
-import {DisplayFlex} from "@/styles/commonStyles";
-import {alignItemsEnum, displayEnum, flexDirectionEnum, justifyContentEnum} from "@/@types/enum";
 import styled from "styled-components";
 import {RussoOneFont} from "@/styles/font/fontStyle";
 import React from "react";
 
 
-const AboutMeSecondContentViewStyle = styled.article`
+const AboutMeSecondContentViewStyleDiv = styled.article`
+    width: 100%;
+    height: 100%;
+`
+
+const AboutMeSecondContentViewStyle = styled.div`
     position: relative;
-    min-width: 80vw;
     width: 100%;
     height: 100%;
     min-height: 70vh;
@@ -18,7 +20,7 @@ const AboutMeSecondContentViewStyle = styled.article`
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     transition: all 1s ease-in-out;
     border: 2px solid ${props => props.theme.palette.reverse};
-    
+
     &:hover {
         transform: scale(1.1);
     }
@@ -44,18 +46,20 @@ const AboutMeSecondLogoStyle = styled.div`
 const AboutMeSecondBackgroundStyle = styled.div`
     position: absolute;
     inset: 0;
-    background-color:  ${props => props.theme.palette.reverse70};
-    background-image: linear-gradient(43deg,  ${props => props.theme.palette.middle} 0%,  ${props => props.theme.palette.middle70} 46%,  ${props => props.theme.palette.second70} 100%);
+    background-color: ${props => props.theme.palette.reverse70};
+    background-image: linear-gradient(43deg, ${props => props.theme.palette.middle} 0%, ${props => props.theme.palette.middle70} 46%, ${props => props.theme.palette.second70} 100%);
 `
 
-export default function AboutMeSecondContentView ({children}: AboutMeSecondContentViewPropsInterface) {
+export default function AboutMeSecondContentView({children}: AboutMeSecondContentViewPropsInterface) {
     return (
-        <AboutMeSecondContentViewStyle>
-            <AboutMeSecondBackgroundStyle />
-            <AboutMeSecondLogoStyle className={RussoOneFont.className}>
-                ABOUT ME
-            </AboutMeSecondLogoStyle>
-            {children}
-        </AboutMeSecondContentViewStyle>
+        <AboutMeSecondContentViewStyleDiv>
+            <AboutMeSecondContentViewStyle>
+                <AboutMeSecondBackgroundStyle/>
+                <AboutMeSecondLogoStyle className={RussoOneFont.className}>
+                    ABOUT ME
+                </AboutMeSecondLogoStyle>
+                {children}
+            </AboutMeSecondContentViewStyle>
+        </AboutMeSecondContentViewStyleDiv>
     )
 }
