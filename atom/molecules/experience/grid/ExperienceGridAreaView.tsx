@@ -48,6 +48,8 @@ const ExperienceAreaStyle = styled(DisplayFlexContainer(flexDirectionEnum.c , ju
     background-color: ${props => props.theme.palette.reverse70};
     opacity: 0.9;
     min-height: 700px;
+    margin-bottom: 20px;
+    
     @media (hover: hover) and (pointer: fine) {
         &:hover {
             opacity: 1;
@@ -59,6 +61,7 @@ const ExperienceAreaStyle = styled(DisplayFlexContainer(flexDirectionEnum.c , ju
         ${(props) => props.$stackVisible && commonAnimation(css`${props.$area === AreaERSolution ? mobileRightGridAnimation : mobileLeftGridAnimation} 1s normal linear;`)};
         width: 100%;
         opacity: 1;
+        ${props => props.$area === AreaLnKorea ? css`margin-bottom: 0;` : ``};
     }
 
     ${(props) => props.theme.media.mobile} {
@@ -66,6 +69,7 @@ const ExperienceAreaStyle = styled(DisplayFlexContainer(flexDirectionEnum.c , ju
         ${(props) => props.$stackVisible && commonAnimation(css`${props.$area === AreaERSolution ? mobileRightGridAnimation : mobileLeftGridAnimation} 1s normal linear;`)};
         width: 100%;
         opacity: 1;
+        ${props => props.$area === AreaLnKorea ? css`margin-bottom: 0;` : ``};
     }
 `
 
