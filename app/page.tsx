@@ -9,15 +9,15 @@ import Education from "@/atom/organisms/education/Education";
 
 
 export default function Home() {
-  return (
-    <Container>
-      <Main>
-        <Intro />
-        <AboutMe />
-        <Stack />
-        <Project />
-        <Education />
-      </Main>
-    </Container>
-  )
+    return (
+        <Container>
+            <Main>
+                <Intro/>
+                <AboutMe/>
+                <Stack/>
+                <Project/>
+                <Education/>
+            </Main>
+        </Container>
+    )
 }
