@@ -3,10 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predev": "tsx data/scripts/gen-registry.ts",
+    "prebuild": "tsx data/scripts/gen-registry.ts",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "gen:registry": "tsx data/scripts/gen-registry.ts"
   },
   "dependencies": {
     "framer-motion": "^10.16.16",
@@ -24,6 +27,7 @@
     "eslint-config-next": "14.0.4",
     "eslint-config-prettier": "^9.1.0",
     "prettier": "3.1.1",
-    "typescript": "^5"
+    "typescript": "^5",
+    "tsx": "^4.0.0"
   }
 }

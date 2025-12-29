@@ -11,8 +11,19 @@ interface AboutMeViewPropsInterface extends ComponentChildrenPropsInterface {
  * Stack
  */
 
+
+type Props =
+  {
+    front: StackItem[];
+    back: StackItem[];
+    etc: StackItem[];
+  };
+
+
+
 interface StackViewPropsInterface extends ComponentChildrenPropsInterface {
   children: React.ReactNode[]
+  data: Props
 }
 
 /**
